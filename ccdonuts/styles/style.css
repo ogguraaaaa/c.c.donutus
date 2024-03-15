@@ -1,0 +1,1208 @@
+@charset "UTF-8";
+
+/*
+################################################################################
+page
+################################################################################
+*/
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.beliefItem3, .rankNumber, .productName, .price,
+h2, .detailName, .detailText, .itemCount, .orderTotal {
+  font-size: 24px;
+}
+.beliefItem2, .cartBtn, .recalculateBtn, .deleteText,
+.shoppingBtn, .loginFrame p, .formBtn, .registerLink,
+.signupItem p, .purchaseContainer p, h3 {
+  font-size: 20px;
+}
+.footerList li, .copyright, .productName, h2,
+.detailName, .detailText, .itemCount, .orderTotal,
+.loginFrame p, .registerLink, .signupContainer p,
+.purchaseContainer p, h3 {
+  color: #7F5539;
+}
+.beliefItem2, .beliefItem3, .beliefItem4, .productName,
+.detailText, .quantityUnit, .itemCount, .orderTotal {
+  font-weight: 500;
+}
+h1 {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+################################################################################
+header-pc
+################################################################################
+*/
+.header {
+  height: 182px;
+}
+.headerTop {
+  height: 118px;
+  background-color: #EDE0D4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 95px;
+}
+.headerCenter img {
+  width: 87px;
+  height: 78px;
+  margin-right: 150px;
+}
+.headerLeft {
+  width: 50px;
+  height: 50px;
+}
+.headerRight img {
+  width: 36px;
+  height: 54px;
+}
+#cartPng {
+  margin-left: 40px;
+}
+.headerBottom {
+  height: 64px;
+  background-color: #B392AC;
+}
+/*
+################################################################################
+dorowa-pc
+################################################################################
+*/
+#nav {
+  width: 1366px;
+  height: 418px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(127, 85, 57, 0.75);
+  transition: transform 0.3s;
+  display: none;
+}
+button.hamburger img {
+  width: 51px;
+  height: 50px;
+}
+.dorowaTop {
+  width: 100%;
+  position: relative;
+}
+.dorowaLogo {
+  margin: 20px 0 40px;
+  display: flex;
+  justify-content: center;
+}
+.dorowaLogo img {
+  width: 87px;
+  height: 78px;
+}
+button.close img {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 12px;
+  right: 95px;
+}
+#nav ul li {
+  font-size: 24px;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  width: 560px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+################################################################################
+footer-pc
+################################################################################
+*/
+.footer {
+  height: 448px;
+  background-color: #EDE0D4;
+  display: flex;
+  flex-direction: column;
+}
+.footerNavi {
+  margin: 20px 0 64px 102px;
+}
+.footerList {
+  display: flex;
+}
+.footerList li {
+  width: 170px;
+  height: 40px;
+  margin-right: 12px;
+  padding: 12px;
+  border-left: 2px solid #B392AC;
+}
+.footerImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerImg img {
+  width: 144px;
+  height: 128px;
+  margin-bottom: 72px;
+}
+.snsImg {
+  display: flex;
+}
+.snsImg a {
+  display: block;
+}
+.snsImg img {
+  width: 32px;
+  height: 32px;
+  margin: 0 20px 40px 20px;
+}
+.copyright {
+  height: 52px;
+  border-top: 1px solid #7F5539;
+  display: grid;
+  place-items: center;
+}
+/*
+################################################################################
+index-pc
+################################################################################
+*/
+.userWelcome {
+  height: 36px;
+  border-bottom: 1px solid #7F5539;
+  display: flex;
+  align-items: center;
+}
+.userWelcome p {
+  margin-left: 103px;
+  font-size: 12px;
+}
+.heroImg img {
+  width: 100%;
+  height: 593px;
+}
+.information, .ranking, .detailContainer, .cartContainer,
+.loginContainer {
+  margin: 0 82px 0 84px;
+  padding: 80px;
+}
+.infoTop {
+  display: flex;
+  justify-content: space-between;
+}
+.infoTop img {
+  width: 480px;
+  height: 480px;
+}
+.infoBottom img {
+  width: 1040px;
+  height: 257px;
+  margin-top: 80px;
+}
+.belief {
+  width: 100%;
+  height: 664px;
+  text-align: center;
+  background-image: url('../images/top5.png');
+  background-size: cover;
+  color: #ffffff;
+  padding-top: 200px;
+}
+.beliefItem1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.beliefItem2 {
+  margin-bottom: 40px;
+}
+.beliefItem3 {
+  margin-bottom: 20px;
+}
+.ranking img {
+  width: 320px;
+  height: 320px;
+  margin-bottom: 20px;
+}
+h1 {
+  width: 224px;
+  height: 72px;
+  margin: 0 auto 120px;
+  border-bottom: 2px solid #FFD233;
+}
+.rankContainer {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.rankItem {
+  width: 320px;
+  margin: 0 60px 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rankNumber {
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+  color: #ffffff;
+  background-color: #E8C2CA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rankItem:nth-child(1) .rankNumber {
+  background-color: #FFD233;
+}
+.rankItem:nth-child(2) .rankNumber {
+  background-color: #CCCCCC;
+}
+.rankItem:nth-child(3) .rankNumber {
+  background-color: #D27C2C;
+}
+.productName {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.price {
+  color: #BF0000;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.cartBtn {
+  width: 260px;
+  height: 52px;
+  color: #ffffff;
+  background-color: #7F5539;
+  text-align: center;
+  margin-left: 0 auto;
+}
+/*
+################################################################################
+product-pc
+################################################################################
+*/
+.bodyProducts .rankNumber {
+  display: none;
+}
+.bodyProducts h1, .bodyLogin h1, .bodySignup h1 {
+  width: 128px;
+  margin: 80px auto;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 120px;
+}
+/*
+################################################################################
+detail-pc
+################################################################################
+*/
+.detailContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.detailImg img {
+  width: 540px; 
+  height: 540px;
+}
+.detailItem {
+  width: 460px;
+  height: 572.8px;
+}
+.detailName {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.detailText {
+  width: 435px;
+  height: 268.8px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+.bodyDetail .price {
+  margin-bottom: 40px;
+}
+.quantityContainer {
+  display: flex;
+}
+.quantityInput {
+  width: 80px;
+  height: 52px;
+  border: 1px solid #7F5539;
+  margin-right: 8px;
+  text-align: center;
+  font-size: 24px;
+}
+.quantityUnit {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+.line {
+  border-bottom: 1px solid #E6CCB2;
+  margin-bottom: 40px;
+}
+.favorite {
+  width: 52px;
+  height: 52px;
+  margin-left: 8px;
+  border: 1px solid #7F5539;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.favorite img {
+  width: 28.89px;
+  height: 28.89px;
+}
+/*
+################################################################################
+cart-pc
+################################################################################
+*/
+.cartContainer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cartCheck {
+  width: 1040px;
+  height: 240px;
+  border: 2px solid #FFD233;
+  margin-bottom: 80px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itemCount {
+  margin-bottom: 20px;
+}
+.orderTotal {
+  margin-bottom: 40px;
+}
+.orderTotal span, .signupItem span {
+  color: #BF0000;
+}
+.purchaseBtn {
+  width: 260px;
+  height: 52px;
+  color: #ffffff;
+  background-color: #BF0000;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.cartItem {
+  display: flex;
+}
+.cartItem img {
+  width: 335px;
+  height: 335px;
+  margin:0 40px 80px 0;
+}
+.donutInfo {
+  width: 665px;
+  height: 316px;
+  display: flex;
+  flex-direction: column;
+}
+.donutCount {
+  display: flex;
+  margin-top: 20px;
+}
+.recalculateBtn {
+  width: 160px;
+  height: 36px;
+  font-weight: 300;
+  background-color: #CCCCCC;
+  text-align: center;
+  margin: 24px 0 100px 0;
+  float: right;
+}
+.deleteText {
+  width: 80px;
+  height: 20px;
+  border-bottom: 0.5px solid #000000;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+.bodyCart .detailName {
+  margin-bottom: 16px;
+}
+.bodyCart .line {
+  margin-bottom: 0;
+}
+.shoppingBtn {
+  width: 260px;
+  height: 52px;
+  color: #FFFFFF;
+  background-color: #7F5539;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+################################################################################
+cartInsert-pc
+################################################################################
+*/
+.bodyCartInsert h1 {
+  width: 420px;
+  margin: 80px auto;
+}
+.bodyCartInsert .shoppingBtn {
+  margin: 0 auto 80px;
+}
+/*
+################################################################################
+login-pc
+################################################################################
+*/
+.loginContainer {
+  padding-top: 0;
+}
+.loginFrame {
+  width: 600px;
+  border: 2px solid #F7D1CD;
+  padding: 40px;
+  margin: 0 auto 40px;
+}
+.loginFrame input, .signupItem input {
+  width: 520px;
+  height: 48px;
+  margin-bottom: 40px;
+  border: 1px solid #7F5539;
+}
+.loginFrame p {
+  margin-bottom: 15px;
+}
+.formBtn {
+  width: 200px;
+  height: 80px;
+  color: #ffffff;
+  background-color: #7F5539;
+  text-align: center;
+  display: block;
+  margin: 40px auto 40px;
+}
+.registerLink {
+  display: block;
+  text-align: center;
+}
+/*
+################################################################################
+loginSuccess-pc / purchaseConfirmation-pc
+################################################################################
+*/
+.bodyLoginSuccess h1, .bodyPurchaseSuccess h1 {
+  width: 200px;
+  margin: 80px auto;
+}
+.bodyLoginSuccess p, .bodyPurchaseSuccess p {
+  margin-bottom: 20px;
+}
+.bodyLoginSuccess .loginFrame p, .bodyPurchaseSuccess .loginFrame p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.bodyLoginSuccess .loginFrame, .bodyPurchaseSuccess .loginFrame {
+  padding-top: 80px;
+}
+.bodyPurchaseSuccess h1 {
+  width: 170px;
+}
+.bodyLoginSuccess h2 {
+  margin-top: 40px;
+}
+/*
+################################################################################
+signup-pc
+################################################################################
+*/
+.signupContainer {
+  width: 520px;
+  margin: 0 auto;
+}
+.postalContainer {
+  display: flex;
+}
+.postalContainer input {
+  width: 150px;
+  margin-right: 8px;
+}
+.postalContainer input:nth-child(2) {
+  width: 300px;
+}
+.signupItem .redText {
+  font-size: 12px;
+}
+.signupContainer p {
+  margin-bottom: 15px;
+}
+/*
+################################################################################
+signupConfirmation-pc
+################################################################################
+*/
+.bodySignupConfirmation span {
+  display: none;
+}
+.signupItem label, .purchaseContainer label {
+  display: block;
+  width: 520px;
+  height: 48px;
+  margin-bottom: 40px;
+  border-left: 1px solid #7F5539;
+}
+.confirmationLabel {
+  padding: 10px 8px;
+  font-size: 24px;
+}
+/*
+################################################################################
+purchaseConfirmation-pc
+################################################################################
+*/
+.purchaseContainer {
+  width: 700px;
+  margin: 0 auto;
+}
+.purchaseItem p {
+  width: 80px;
+  height: 48px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.bodyPurchase h1, .bodyPurchaseConfirmation h1 {
+  width: 170px;
+  margin: 80px auto;
+}
+.purchaseContainer label {
+  margin-bottom: 20px;
+  border-left: 4px solid #F7D1CD;
+}
+.purchaseItem {
+  border-top: 2px solid #F7D1CD;
+  border-bottom: 2px solid #F7D1CD;
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+.purchaseItemList {
+  display: flex;
+}
+h3 {
+  text-align: center;
+  margin: 0 auto 40px;
+}
+.bodyPurchase .line:nth-of-type(2) {
+  margin-bottom: 80px;
+}
+.registerLink {
+  margin-bottom: 40px;
+}
+.bodyPurchaseConfirmation .formBtn {
+  margin-bottom: 80px;
+}
+/*
+################################################################################
+logout-pc
+################################################################################
+*/
+.bodyLogout h1 {
+  width: 320px;
+  margin: 80px auto;
+}
+.bodyLogout .registerLink {
+  width: 200px;
+  height: 55px;
+  padding-top: 10px;
+  font-size: 32px;
+  border: 4px solid #000000;
+  margin: 0 auto 80px;
+  color: #000000;
+  background-color: #CCCCCC;
+}
+/*
+################################################################################
+logoutSuccess-pc
+################################################################################
+*/
+.bodyLogoutSuccess h1 {
+  width: 480px;
+  margin-top: 40px;
+  border: none;
+}
+/*
+################################################################################
+extras
+################################################################################
+*/
+.userWelcome p {
+  margin-bottom: 0px;
+}
+h1 {
+  width: auto;
+}
+/*
+################################################################################
+@media/max-width: 768px
+################################################################################
+*/
+@media screen and (max-width: 768px) {
+
+/*
+################################################################################
+header-768px
+################################################################################
+*/ 
+  .header {
+    height: 130px;
+  }
+  .headerTop {
+    height: auto;
+    padding: 012px;
+  }
+  .headerCenter img {
+    width: 62px;
+    height: 53px;
+    margin-left: 40px;
+    margin-right: 0px;
+    border: none;
+  }
+  .headerLeft {
+    width: 25px;
+    height: 25px;
+  }
+  .headerRight img {
+    width: 40px;
+    height: 35px;
+  }
+  #cartPng {
+    margin-left: 12px;
+  }
+  .headerBottom {
+    height: 37px;
+    background-color: #EDE0D4;
+  }
+  /*
+################################################################################
+dorowa-768px
+################################################################################
+*/
+  #nav {
+    width: 375px;
+    height: 488px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    background-color: rgba(127, 85, 57, 0.75);
+    transition: transform 0.3s;
+    display: none;
+  }
+  button.hamburger img {
+    width: 25px;
+    height: 25px;
+  }
+  button.close img {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  .dorowaLogo {
+    margin: 12px 0 60px;
+    justify-content: flex-start;
+  }
+  .dorowaLogo img {
+    width: 59px;
+    height: 52px;
+  }
+  #nav ul li {
+    font-size: 16px;
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/*
+################################################################################
+footer-768px
+################################################################################
+*/ .footer {
+    height: 303px;
+  }
+  .footerNavi {
+    margin: 12px 0 12px 12px;
+  }
+  .footerList {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerList li {
+    width: 140px;
+    height: 20px;
+    margin: 0 0 20px 0;
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+  .footerImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerImg img {
+    width: 72px;
+    height: 64px;
+    margin-bottom: 12px;
+  }
+  .snsImg img {
+    width: 32px;
+    height: 32px;
+    margin: 0 20px 20px 20px;
+  }
+  .copyright {
+    height: 34px;
+  }
+  .snsImg {
+    order: -1;
+  }
+/*
+################################################################################
+index-768px
+################################################################################
+*/
+  .userWelcome p {
+    margin-left: 20px;
+  }
+  .heroImg img {
+    height: 200px;
+  }
+  .information, .ranking, .detailContainer {
+    margin: 21px 20px 20px;
+    padding: 0;
+  }
+  .infoTop img {
+    width: 157.5px;
+    height: 157px;
+  }
+  .infoBottom img {
+    width: 335px;
+    height: 83px;
+    margin-top: 20px;
+  }
+  .belief {
+    height: 568px;
+    padding-top: 100px;
+  }
+  .beliefItem1 {
+    font-size: 24px;
+  }
+  .beliefItem2 {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  .beliefItem3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .beliefItem4 {
+    font-size: 16px;
+  }
+  .ranking img {
+    width: 157.5px;
+    height: 157px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    width: 140px;
+    height: 44px;
+    margin: 0 auto 60px;
+    font-size: 20px;
+  }
+  .rankContainer {
+    width: 375px;
+  }
+  .rankItem {
+    width: 157.5px;
+    margin: 0 20px 80px 0;
+  }
+  .rankNumber {
+    width: 35px;
+    height: 35px;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+  .productName {
+    font-size: 16px;
+  }
+  .price {
+    font-size: 16px;
+  }
+  .cartBtn {
+    width: 148px;
+    height: 36px;
+    font-size: 12px;
+  }
+/*
+################################################################################
+product-768px
+################################################################################
+*/
+  .bodyProducts h1 {
+    width: 80px;
+    margin: 20px auto 40px;
+  }
+  h2 {
+    margin-bottom: 80px;
+    font-size: 16px;
+  }
+/*
+################################################################################
+detail-768px
+################################################################################
+*/
+  .detailContainer {
+    flex-direction: column;
+    height: 796.6px
+  }
+  .detailImg img {
+    width: 335px; 
+    height: 335px;
+    margin-bottom: 20px;
+  }
+  .detailItem {
+    width: 335px;
+  }
+  .detailName {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .detailText {
+    width: 335px;
+    height: 153.6px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .quantityInput {
+    width: 56px;
+    height: 36px;
+    margin-right: 4px;
+    font-size: 16px;
+  }
+  .quantityUnit {
+    margin-right: 11.5px;
+  }
+  .line {
+    margin-bottom: 20px;
+  }
+  .favorite {
+    width: 36px;
+    height: 36px;
+    margin-left: 4px;
+  }
+  .favorite img {
+    width: 20px;
+    height: 20px;
+  }
+/*
+################################################################################
+cart-768px
+################################################################################
+*/
+  .cartContainer {
+    height: 1619px;
+    margin: 0;
+    padding: 20px
+  }
+  .cartCheck {
+    width: 335px;
+    height: 148px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  .itemCount, .orderTotal {
+    font-size: 16px;
+  }
+  .orderTotal {
+    margin-bottom: 20px;
+  }
+  .purchaseBtn {
+    width: 148px;
+    height: 36px;
+    font-size: 12px;
+  }
+  .cartItem {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cartItem img {
+    margin:0 0 20px 0;
+  }
+  .donutInfo {
+    width: 335px;
+    height: auto;
+    align-items: center;
+  }
+  .donutCount {
+    flex-direction: column;
+    margin: 0;
+  }
+  .bodyCart .quantityInput {
+    height: 24px;
+    text-align: right;
+  }
+  .bodyCart .price {
+    margin-bottom: 16px;
+  }
+  .recalculateBtn {
+    width: 140px;
+    height: 28px;
+    font-size: 12px;
+    margin: 20px 0;
+  }
+  .deleteText {
+    width: 48px;
+    height: 12px;
+    font-size: 12px;
+    margin:0 auto 40px;
+  }
+  .bodyCart .detailName {
+    margin-bottom: 16px;
+  }
+  .bodyCart .line {
+    display: none;
+  }
+  .shoppingBtn {
+    width: 160px;
+    height: 36px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+/*
+################################################################################
+cartInsert-768px
+################################################################################
+*/
+  .bodyCartInsert h1 {
+    width: 280px;
+  }
+  .bodyCartInsert .shoppingBtn {
+    margin: 0 auto 80px;
+  }
+/*
+################################################################################
+login-768px
+################################################################################
+*/
+  .bodyLogin h1 {
+    width: 80px;
+    margin: 20px auto;
+  }
+  .loginContainer {
+    height: 380px;
+    margin: 0;
+    padding: 40px;
+  }
+  .loginFrame {
+    width: 295px;
+    height: 228px;
+    border: 2px solid #F7D1CD;
+    padding: 20px 12px;
+    margin-bottom: 20px;
+  }
+  .loginFrame input, .signupItem input {
+    width: 271px;
+    height: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #7F5539;
+  }
+  .loginFrame p {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .formBtn {
+    width: 160px;
+    height: 48px;
+    color: #ffffff;
+    background-color: #7F5539;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto 20px;
+  }
+  .registerLink {
+    font-size: 12px;
+    text-align: right;
+  }
+/*
+################################################################################
+loginSuccess-768px / purchaseSuccess-768px
+################################################################################
+*/
+  .bodyLoginSuccess h1, .bodyPurchaseSuccess h1 {
+    width: 120px;
+    margin: 20px auto;
+  }
+  .bodyLoginSuccess .loginFrame, .bodyPurchaseSuccess .loginFrame {
+    padding: 20px 12px;
+    height: 84px;
+  }
+  .bodyLoginSuccess p, .bodyPurchaseSuccess p {
+    margin-bottom: 8px;
+  }
+  .bodyLoginSuccess .loginFrame p, .bodyPurchaseSuccess .loginFrame p {
+    margin-bottom: 20px;
+  }
+  .bodyPurchaseSuccess h1 {
+    width: 100px
+  }
+/*
+################################################################################
+signup-768px
+################################################################################
+*/
+  .signupContainer {
+    width: 295px;
+    margin: 0 auto;
+  }
+  .signupContainer p {
+    font-size: 12px;
+  }
+  .signupItem input {
+    width: 295px;
+  }
+  .postalContainer {
+    display: flex;
+  }
+  .postalContainer input {
+    width: 60px;
+    margin-right: 4px;
+  }
+  .postalContainer input:nth-child(2) {
+    width: 100px;
+  }
+  .bodySignup h1, .bodySignupConfirmation h1 {
+    width: 80px;
+    margin: 20px auto 52px;
+  }
+  .signupItem .redText {
+    font-size: 8px;
+  }
+  .signupContainer p {
+    margin-bottom: 8px;
+  }
+/*
+################################################################################
+signupConfirmation-768px
+################################################################################
+*/
+  .signupItem label {
+    width: 295px;
+    height: 20px;
+    margin-bottom: 20px;
+  }
+  .confirmationLabel {
+    padding: 5px 4px;
+    font-size: 12px;
+  }
+/*
+################################################################################
+purchaseConfirmation-768px
+################################################################################
+*/
+  .purchaseContainer {
+    width: 375px;
+    padding: 20px 20px 0;
+  }
+  .purchaseItem p {
+    width: 90px;
+    height: 20px;
+    font-size: 12px;
+    margin-right: 4px;
+  }
+  .bodyPurchase h1, .bodyPurchaseConfirmation h1 {
+    width: 100px;
+    margin: 32px auto;
+  }
+  .purchaseContainer label {
+    margin-bottom: 16px;
+    height: 20px;
+  }
+  .purchaseItem {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  h3 {
+    margin: 0 auto 20px;
+    width: 72px;
+    font-size: 12px;
+  }
+  .bodyPurchase .line {
+    margin-bottom: 0px;
+  }
+  .bodyPurchase .formBtn {
+    margin-top: 0px;
+  }
+  .registerLink {
+    margin-bottom: 20px;
+  }
+/*
+################################################################################
+logout-768px
+################################################################################
+*/
+  .bodyLogout h1 {
+    width: 200px;
+    margin: 80px auto;
+  }
+  .bodyLogout .registerLink {
+    width: 200px;
+    height: 55px;
+    padding-top: 10px;
+    font-size: 24px;
+    border: 4px solid #000000;
+    margin: 0 auto 80px;
+    color: #000000;
+    background-color: #CCCCCC;
+    text-align: center;
+  }
+/*
+################################################################################
+logoutSuccess-768px
+################################################################################
+*/
+  .bodyLogoutSuccess h1 {
+    width: 300px;
+    margin-top: 40px;
+  }
+/*
+################################################################################
+extras-768px
+################################################################################
+*/
+  h1 {
+    width: auto;
+  }
+}
